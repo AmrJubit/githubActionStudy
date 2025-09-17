@@ -14,5 +14,5 @@ jobs:
 
     steps:
       - name: ManualGreet
-        run: echo "${{ input.name }}"
+        run: echo "${{ inputs.name }}"
   
