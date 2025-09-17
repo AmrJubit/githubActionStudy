@@ -1,0 +1,12 @@
+name: manual_test
+on:
+  workflow_dispatch:
+
+jobs:
+  manual_demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ManualGreet
+        run: echo "Test manual test"
+  
