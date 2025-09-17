@@ -5,6 +5,8 @@ on:
       name:
         description: "TEST NAME"
         type: string
+        required: true
+        default: "JUBIT TEST"
 
 jobs:
   manual_demo:
@@ -12,5 +14,5 @@ jobs:
 
     steps:
       - name: ManualGreet
-        run: echo "Test manual test"
+        run: echo "${{input.name}}"
   
