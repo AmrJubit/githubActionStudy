@@ -1,6 +1,10 @@
 name: manual_test
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: "TEST NAME"
+        type: string
 
 jobs:
   manual_demo:
